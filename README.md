@@ -62,12 +62,12 @@ placeholder
 | GET | / | HOME PAGE  |
 | GET | /restaurants | Popular Restaurants PAGE  |
 | GET | /restaurants/recommended | Recommended Restaurants PAGE (Post-MVP) |
-| POST | /restaurants | New Restaurant Page (Necessary with location?) |
-| GET | /restaurants/new | New Restaurant Page (Necessary with location?) |
+| POST | /restaurants | New Restaurant Page  |
+| GET | /restaurants/new | New Restaurant Page  |
 | GET | /restaurants/:id | Restaurant Show PAGE  |
-| Put | /restaurant/:id |  Edit Restaurant Page (Do we need this?) |
-| GET | /restaurant/:id/edit |  Edit Restaurant Page (Do we need this?) |
-| Delete | /restaurants/:id |  Delete Restaurant Page (Do we need this?)|
+| Put | /restaurant/:id |  Edit Restaurant Page  |
+| GET | /restaurant/:id/edit |  Edit Restaurant Page  |
+| Delete | /restaurants/:id |  Delete Restaurant Page |
 | Post | /restaurants/:id/review |  Post Review |
 | Put | /restaurants/:id/review |  Edit Review |
 | GET | /restaurants/:id/review/edit |  Edit Review Page |

@@ -32,7 +32,7 @@ restaurants.get('/:id', async (req, res) => {
     }
 })
 
-// CREATE A restaurant (Do we need this?)
+// CREATE A restaurant
 restaurants.post('/', async (req, res) => {
     try {
         const newRestaurant = await Restaurant.create(req.body)
@@ -45,7 +45,7 @@ restaurants.post('/', async (req, res) => {
     }
 })
 
-// UPDATE A restaurant (Do we need this?)
+// UPDATE A restaurant
 restaurants.put('/:id', async (req, res) => {
     try {
         const updatedRestaurant = await Restaurant.update(req.body, {

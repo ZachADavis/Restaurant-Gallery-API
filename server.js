@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }))
 // ROOT
 app.get('/', (req, res) => {
     res.status(200).json({
-        message: 'TBD'
+        message: 'Welcome to Restaurant Gallery!'
     })
 })
 

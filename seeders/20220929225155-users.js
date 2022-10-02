@@ -1,4 +1,5 @@
 'use strict';
+const users = require("../controllers")
 
 module.exports = {
   async up(queryInterface, Sequelize) {

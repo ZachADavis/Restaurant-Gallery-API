@@ -13,7 +13,6 @@
   "description": "- Create a react app that allows users to find local restaurants based on preferences and leave a rating for them.",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZachADavis/Restaurant-Gallery-API.git"

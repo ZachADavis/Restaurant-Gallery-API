@@ -29,9 +29,9 @@ module.exports = (sequelize, DataTypes) => {
     },
     rating: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
-    comment: {
+    restaurant_image: {
       type: DataTypes.STRING,
       allowNull: false
     }

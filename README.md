@@ -28,9 +28,9 @@
 - User accounts
 - Recommended Page (sorted for user)
 - Ability to sort restraunts
-- Location features
 
 ### Stretch: 
+- Location features used to fill database with nearby restaurants
 - Add more features and improvements
 
 ## Technologies Used
@@ -53,8 +53,8 @@
 ## Front-End Wireframe
 placeholder
 
-## Database Diagram
-placeholder
+## ERD
+![plot](./planning/ERD.png)
 
 ## Routes Table (MVP & Post-MVP)
 | METHOD       | PATH                                 | PURPOSE  |

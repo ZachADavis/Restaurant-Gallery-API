@@ -13,13 +13,13 @@ module.exports = (sequelize, DataTypes) => {
       // Restauarant
       Comment.belongsTo(Restaurant, {
         foreignKey: "restaurant_id",
-        as: "restaurants"
+        as: "restaurant"
       })
 
       // user name
-      Comment.hasMany(users, {
-        foreignKey: "user_id",
-        as: "users"
+      Comment.belongsTo(User, {
+        foreignKey: "user_name",
+        as: "user"
       })
 
     }

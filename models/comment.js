@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       })
 
       // user name
-      Comment.hasMany(users, {
+      Comment.belongsTo(User, {
         foreignKey: "user_id",
         as: "users"
       })

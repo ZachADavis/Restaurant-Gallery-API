@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "node": "^18.10.0",
+    "pg": "^8.8.0",
     "react": "^18.2.0",
     "sequelize": "^6.23.2"
   },
@@ -12,7 +14,6 @@
   "description": "- Create a react app that allows users to find local restaurants based on preferences and leave a rating for them.",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZachADavis/Restaurant-Gallery-API.git"

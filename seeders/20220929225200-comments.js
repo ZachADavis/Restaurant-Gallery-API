@@ -2,9 +2,9 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('comments', [{
+    await queryInterface.bulkInsert('Comments', [{
       user_id: "1",
-      restaurant_name: "1",
+      restaurant_id: "1",
       comment: "Great food!"
     }])
   },

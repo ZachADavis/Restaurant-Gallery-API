@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = {
-  async up(queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('restaurants', [{
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkInsert('Restaurants', [{
       restaurant_name: "Italian Restaurant 1",
       rating: "5",
       restaurant_image: "https://place-puppy.com/300x300"
@@ -55,7 +55,7 @@ module.exports = {
     ])
   },
 
-  async down(queryInterface, Sequelize) {
+  down: async (queryInterface, Sequelize) => {
     await queryInterface.bulkDelete('restaurants', null, {})
   }
 };

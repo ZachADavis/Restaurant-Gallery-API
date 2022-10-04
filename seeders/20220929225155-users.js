@@ -1,9 +1,8 @@
 'use strict';
-const users = require("../controllers")
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('users', [{
+    await queryInterface.bulkInsert('Users', [{
       user_email: "fake@email.com",
       user_name: "user1",
       password: "password"

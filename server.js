@@ -19,10 +19,6 @@ app.get('/', (req, res) => {
 const restaurantcontroller = require('./controllers/restaurant_controller.js')
 app.use('/restaurants', restaurantcontroller)
 
-const reviewcontroller = require('./controllers/review_controller.js')
-app.use('/review', reviewcontroller)
-
-
 const usercontroller = require('./controllers/user_controller.js')
 app.use('/user', usercontroller)
 

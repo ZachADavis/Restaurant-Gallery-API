@@ -51,7 +51,7 @@
 |Tue. 10/04|         Submit completed project. Project presentations                              |
 
 ## Front-End Wireframe
-placeholder
+![plot](./planning/wireframe.png)
 
 ## ERD
 ![plot](./planning/ERD.png)
@@ -82,6 +82,7 @@ placeholder
 | GET | * | 404 PAGE (MATCHES ANY ROUTE NOT DEFINED ABOVE)  |
 # Outstanding Issues
 ## Bugs
-- 
+- Front and back end communication
 ## Unfinished functionality
-- 
+- Post-MVP plans
+- location features

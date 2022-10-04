@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(Comment) {
+    static associate({ Comment }) {
       // comments
       Restaurant.hasMany(Comment, {
         foreignKey: "restaurant_id",
@@ -29,9 +29,9 @@ module.exports = (sequelize, DataTypes) => {
     },
     rating: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
-    comment: {
+    restaurant_image: {
       type: DataTypes.STRING,
       allowNull: false
     }

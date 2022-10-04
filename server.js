@@ -11,17 +11,13 @@ app.use(express.urlencoded({ extended: false }))
 // ROOT
 app.get('/', (req, res) => {
     res.status(200).json({
-        message: 'TBD'
+        message: 'Welcome to Restaurant Gallery!'
     })
 })
 
 //Controllers
 const restaurantcontroller = require('./controllers/restaurant_controller.js')
 app.use('/restaurants', restaurantcontroller)
-
-const reviewcontroller = require('./controllers/review_controller.js')
-app.use('/review', reviewcontroller)
-
 
 const usercontroller = require('./controllers/user_controller.js')
 app.use('/user', usercontroller)

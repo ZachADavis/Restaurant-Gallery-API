@@ -9,17 +9,17 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(Restaurant, User) {
+    static associate({ Restaurant, User }) {
       // Restauarant
       Comment.belongsTo(Restaurant, {
         foreignKey: "restaurant_id",
-        as: "restaurants"
+        as: "restaurant"
       })
 
       // user name
       Comment.belongsTo(User, {
         foreignKey: "user_id",
-        as: "users"
+        as: "user"
       })
 
     }
@@ -30,12 +30,12 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true
     },
-    user_name: {
-      type: DataTypes.STRING,
+    user_id: {
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     restaurant_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     comment: {

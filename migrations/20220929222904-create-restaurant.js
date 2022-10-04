@@ -16,9 +16,9 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: true
       },
-      comment: {
+      restaurant_image: {
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: false
       }
     });
   },

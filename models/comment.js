@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
 
       // user name
       Comment.belongsTo(User, {
-        foreignKey: "user_name",
+        foreignKey: "user_id",
         as: "user"
       })
 
@@ -30,12 +30,12 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true
     },
-    user_name: {
-      type: DataTypes.STRING,
+    user_id: {
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     restaurant_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false
     },
     comment: {

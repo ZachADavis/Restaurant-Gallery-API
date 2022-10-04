@@ -8,12 +8,12 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      user_name: {
-        type: Sequelize.STRING,
+      user_id: {
+        type: Sequelize.INTEGER,
         allowNull: false
       },
-      restaurant_name: {
-        type: Sequelize.STRING,
+      restaurant_id: {
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       comment: {
